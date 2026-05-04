@@ -1,0 +1,21 @@
+{
+  "id": "openclaw-otper",
+  "name": "Otper",
+  "description": "Read and act on Otper boards, lists, cards, labels, and comments. Lets the agent search boards, inspect cards, create/update/move cards, manage labels, and post or react to comments.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "token": {
+        "type": "string",
+        "description": "Otper API bearer token. Falls back to the OTPER_TOKEN environment variable.",
+        "secret": true
+      },
+      "baseUrl": {
+        "type": "string",
+        "description": "Otper instance base URL (default: https://otper.com).",
+        "default": "https://otper.com"
+      }
+    }
+  }
+}
